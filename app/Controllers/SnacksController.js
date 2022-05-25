@@ -1,5 +1,5 @@
 import { ProxyState } from "../AppState.js";
-
+import {snacksService} from "../Services/SnacksService.js"
 
 
 function drawSnacks(){
@@ -17,10 +17,17 @@ function drawSnacks(){
 
 export class SnackController{
     constructor(){
-        console.log('Snack controller has loaded');
+        console.log('Snack controller has loaded')
         drawSnacks()
         
     }
+    
+
+    purchaseSnacks(snackName){
+        
+        let purchasedSnack = snacksService.purchaseSnack(snackName)
+    }
+    
 
 }
 
