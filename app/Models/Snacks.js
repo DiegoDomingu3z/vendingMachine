@@ -4,10 +4,10 @@
 
 
 export class Snack{
-    constructor(name, price, image){
-        this.name = name
-        this.price = price
-        this.image = image
+    constructor(data){
+        this.name = data.name
+        this.price = data.price
+        this.image = data.image
     }
 
 

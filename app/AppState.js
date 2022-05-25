@@ -10,12 +10,12 @@ class AppState extends EventEmitter {
 
   vending = []
 
-  snack = [new Snack("Takis", 1.25, './assets/img/takis.webp' ),
-new Snack("Lays", 1.50, './assets/img/lays.webp'),
-new Snack("Twix", 1.50, './assets/img/twix.webp'),
-new Snack("Cheetos", 1.50, './assets/img/cheetos.webp'),
-new Snack("Snickers", 1.00, './assets/img/snickers.jpeg'),
-new Snack ("Sunchips", 1.50, './assets/img/sunchips.webp')
+  snack = [new Snack({name: "Takis", price: 1.25, image:'./assets/img/takis.webp'} ),
+new Snack({name: "Lays", price: 1.50, image: './assets/img/lays.webp'}),
+new Snack({name: "Twix",price: 1.50, image:'./assets/img/twix.webp'}),
+new Snack({name: "Cheetos", price: 1.50,image: './assets/img/cheetos.webp'}),
+new Snack({name: "Snickers",price: 1.00,image: './assets/img/snickers.jpeg'}),
+new Snack ({name:"Sunchips", price: 1.50, image:  './assets/img/sunchips.webp'})
 ]
 }
 

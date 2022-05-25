@@ -7,7 +7,7 @@ function drawSnacks(){
     let snacks = ProxyState.snack;
     let template = ''
     snacks.forEach(s => template += s.Template)
-    console.log(template);
+    // console.log(template);
 
     document.getElementById('snacks').innerHTML = template
 }
