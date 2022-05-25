@@ -7,24 +7,14 @@ function _drawMoney(){
 }
 
 
-// export class TransactionController{
-//     constructor(){
-//         ProxyState.on('change', _drawMoney)
-//         _drawMoney()
-//     }
-//     addMoney(){
-//         transactionService.addMoney()
-//     }
-// }
-
-
-  
-  export class TransactionController {
-    constructor() {
-      ProxyState.on('change', _drawMoney)
-      _drawMoney()
+export class TransactionController{
+    constructor(){
+        ProxyState.on('change', _drawMoney)
+        _drawMoney()
     }
-    addMoney() {
-      transactionService.addMoney()
+    addMoney(){
+        transactionService.addMoney()
     }
 }
+
+
